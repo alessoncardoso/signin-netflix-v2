@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    background-image: url("../img-netflix/BR-pt-20231030-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+}
+
+.logo-img {
+    width: 200px;
+    height: 100px;
+    padding: 12px 0 0 5px;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-wrapper {
+    width: 450px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.75);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 5px;
+}
+
+.form-content {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title {
+    color: #fff;
+    margin-bottom: 13px;
+}
+
+.input-box {
+    padding: 15px 0 0;
+    margin: 0 0 5px;
+    position: relative;
+}
+
+.input-field {
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #333;
+    outline: none;
+}
+
+.email {
+    padding:  20px 14px 10px 14px;
+}
+
+.password {
+    padding: 20px 38px 10px 14px;
+}
+
+.input-field::placeholder {
+    color: transparent;
+}
+
+.input-field:placeholder-shown ~ .input-label {
+    top: 1.8rem;
+    color: #8c8c8c;
+    font-size: 14px;
+    cursor: text;
+}
+
+label,
+.input-field:focus ~ .input-label {
+    top: 1.3rem;
+    padding: 0 0 0 14px;
+    display: block;
+    font-size: 11px;
+    color: #8c8c8c;
+    background: transparent;
+    transition: 0.1s;
+    position: absolute;
+}
+
+.btn-password {
+    top: -1.6rem;
+    height: 0;
+    padding: 0 14px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    color: #8c8c8c;
+}
+
+.btn-submit {
+    width: 100%;
+    line-height: 50px;
+    margin: 24px 0 12px;
+    padding: 0;
+    color: #fff;
+    font-size: medium;
+    background-color: #e50914;
+    border-radius: 5px;
+    border: none;
+}
+
+.box-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-remember {
+    height: 10px;
+}
+
+.span-label {
+    color: #b3b3b3;
+    font-size: small;
+}
+
+.info {
+    margin-top: 50px;
+    color: #b3b3b3;
+    font-size: small;
+}
+
+.btn-help {
+    border-bottom: 1px solid transparent;
+}
+
+.btn-help:hover {
+    border-bottom: 1px solid #b3b3b3;
+} 
+
+.btn-signup {
+    color: #fff;
+    font-size: small;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.btn-signup:hover {
+    border-bottom: 2px solid #fff;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 100%;
+        position: absolute;
+    }
+    
+    .logo-img {
+        width: 100px;
+        height: 50px;
+    }
+    
+    .form-wrapper {
+        width: 100%;
+        height: 100%;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+ 
+    .form-content {
+        width: 350px;
+        padding: 0 10px;
+    }
+
+    .box-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .span-remember {
+        display: none;
+    }
+
+    .info {
+        margin: 20px 0;
+    }
+}
