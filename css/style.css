@@ -87,7 +87,7 @@ a {
     padding: 20px 38px 10px 14px;
 }
 
-.input-label {
+.input-field:placeholder-shown ~ .input-label {
     top: 1.8rem;
     color: #8c8c8c;
     font-size: 14px;
